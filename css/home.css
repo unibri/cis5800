@@ -7,6 +7,12 @@
 	font-size: 21px;
 	font-weight: bold;
 }
+.dropdown-menu{
+	transform:translateX(-60%);
+}
+.loginInput{
+	width:275px;
+}
 /* everything under here is for the main search tool */
 #homeSearch {
 	height: 100%;
