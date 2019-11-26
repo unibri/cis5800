@@ -1,1 +1,30 @@
-
+ /*this affects all of the page */
+ *{
+   font-family: "museosans_md", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+}
+/*navbar customanization*/
+.navbar {
+	font-size: 21px;
+	font-weight: bold;
+}
+/* everything under here is for the main search tool */
+#homeSearch {
+	height: 100%;
+	width: 100%;
+}
+#title{
+	padding-top:100px;
+	padding-bottom:50px;
+	text-align:center;
+}
+.search{
+	transform:translateY(85%);
+}
+/*for the search by category section*/
+#byCategory{
+	text-align:center;
+	padding-top:100px;
+}
+.category{
+	text-align:center;
+}
