@@ -232,8 +232,40 @@
 		</div>
 	</div>
 </div>
-<footer>
-<div id="google_translate_element"></div>
+<div class="pad"></div>
+<footer class="site-footer">
+  <div class="container">
+	<div class="row">
+	  <div class="col-sm-12 col-md-6">
+		<h6>Important</h6>
+		<p class="text-justify">The legal information and materials on this website are intended to be used for general information. If you are looking for assistance with your personal immigration case, please consult a licensed attorney who is an expert in immigration law or a Board of Immigration Appeals accredited representative. Some sources of assistance can be found under the Community Resources section of this site. 
+	  </div>
+
+	  <div class="col-xs-6 col-md-3">
+		<h6>Change Language</h6>
+		<ul class="footer-links">
+		  <li><div id="google_translate_element"></div></li>
+		</ul>
+	  </div>
+
+	  <div class="col-xs-6 col-md-3">
+		<h6>Quick Links</h6>
+		<ul class="footer-links">
+		  <li><a href="http://scanfcode.com/about/">COMING SOON</a></li>
+		</ul>
+	  </div>
+	</div>
+	<hr>
+  </div>
+  <div class="container">
+	<div class="row">
+	  <div class="col-md-8 col-sm-6 col-xs-12">
+		<p class="copyright-text">Copyright &copy; 2019 All Rights Reserved by 
+	 <a href="#">Immigreation</a>.
+		</p>
+	  </div>
+	</div>
+  </div>
 </footer>
     <!-- Optional JavaScript -->
 <script type="text/javascript">
