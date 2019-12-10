@@ -122,7 +122,7 @@
 	  <div class="col-xs-6 col-md-3">
 		<h6>Quick Links</h6>
 		<ul class="footer-links">
-		  <li><a href="http://scanfcode.com/about/">COMING SOON</a></li>
+		  <li><a href="">COMING SOON</a></li>
 		</ul>
 	  </div>
 	</div>
@@ -132,7 +132,7 @@
 	<div class="row">
 	  <div class="col-md-8 col-sm-6 col-xs-12">
 		<p class="copyright-text">Copyright &copy; 2019 All Rights Reserved by 
-	 <a href="#">Immigreation</a>.
+	 <a href="">Immigreation</a>.
 		</p>
 	  </div>
 	</div>
