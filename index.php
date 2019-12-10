@@ -13,7 +13,7 @@
   <body>
   <!--NAVBAR-->
   <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #00000;">
-  <a class="navbar-brand" href="index.html">Immigreation</a>
+  <a class="navbar-brand" href="index.php">Immigreation</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -21,32 +21,12 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="whoweare.html"> Who We Are</a>
+        <a class="nav-link" href="whoweare.php"> Who We Are</a>
       </li>
-	  <li class="nav-item">
-        <a class="nav-link" href="signup.html">Sign Up</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Login
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-         <form>
-			<div class="form-group loginInput">
-				<label for="loginEmail">Email</label>
-				<input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp" placeholder="Enter email">
-			</div>
-			<div class="form-group loginInput">
-				<label for="loginPassword">Password</label>
-				<input type="password" class="form-control" id="loginPassword" placeholder="Password">
-			</div>
-			<button type="submit" class="btn btn-primary">Login</button>
-		 </form>
-        </div>
-      </li>
+	  <?php require_once "navbar.php"; ?>
     </ul>
   </div>
 </nav>
@@ -56,16 +36,16 @@
 <!--use homeSearch to style this section-->
 	<div id = "homeSearch">
 		<h1 id="title">IMMIGRATION RESOURCE SEARCH</h1>
-			<form method= "post">
+			<form method= "post" action = "results.php">
 				<div class="row" style="text-align:center;">
 				<div class="form-group col">
-					<label for="userAge">Age</label>
-					<input type="text" class="form-control" id="userAge">
+					<label for="age">Age</label>
+					<input type="text" class="form-control" id="age" name="age">
 				</div>
 				<div class="form-group col">
-					<label for="userStatus">Select Your Status</label>
-					<select class="form-control" id="userStatus">
-					<option>Student (F-1 Visa)</option>
+					<label for="status">Select Your Status</label>
+					<select class="form-control" id="status" name="status">
+					<option>Student F-1 Visa</option>
 					<option>TPS</option>
 					<option>Undocumented</option>
 					<option>Undocumented with DACA</option>
@@ -73,13 +53,10 @@
 					<small id="statusHelp" class="form-text text-muted">Confused about your status? <a href="">Learn more</a></small>
 				</div>
 				<div class="form-group col">
-					<label for="userState">Select Your State</label>
-					<select class="form-control" id="userState">
-					<option>CA</option>
-					<option>FL</option>
-					<option>NJ</option>
+					<label for="state">Select Your State</label>
+					<select class="form-control" id="state" name="state">
+					<option>AZ</option>
 					<option>NY</option>
-					<option>TX</option>
 					</select>
 				</div>
 				<div class="col">
@@ -89,18 +66,19 @@
 			</form>			
 	</div>
 </div>
+<!--hi-->
 <!--next section, search by category-->
 <h1 id="byCategory">Search by Category </h1>
 <div class="container">
 	<div class="row">
-		<div class="col">
+		<div class="col"onclick="location.href='education.php';">
 			<h2 class="category"> Education </h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
 			labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 			Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
 		</div>
-		<div class="col">
+		<div class="col"onclick="location.href='healthcare.php';">
 			<h2 class="category"> Healthcare </h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
 			labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
@@ -109,8 +87,8 @@
 		</div>
 	</div>
 		<div class="row">
-		<div class="col">
-			<h2 class="category"> Social Services </h2>
+		<div class="col"onclick="location.href='publicservices.php';">
+			<h2 class="category"> Public Services </h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
 			labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 			Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 

@@ -8,11 +8,14 @@
 	font-weight: bold;
 }
 .dropdown-menu{
-	transform:translateX(-60%);
+	transform:translateX(-37%);
 }
-.loginInput{
-	width:275px;
+.btn{
+	font-weight: bold;
+	transform:translateY(10%);
 }
+
+
 /* everything under here is for the main search tool */
 #homeSearch {
 	height: 100%;
@@ -34,7 +37,37 @@
 .category{
 	text-align:center;
 }
-/*sign up page styling*/
+/*different paddins with confusing names*/
 .pad{
 	padding-top:100px;
+}
+.padd{
+	padding-top:50px;
+}
+.paddd{
+	width:100%;
+	height:200px;
+}
+/*education search page styling*/
+#educationSearch{
+	
+}
+/*loading page styling*/
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  margin: 0 auto;
+
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+#loggingin{
+	text-align:center;
 }
